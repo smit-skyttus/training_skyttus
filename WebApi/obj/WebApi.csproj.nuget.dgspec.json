@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vishakha Patel\\source\\repos\\training_skyttus\\WebApi\\WebApi.csproj": {}
+    "C:\\Users\\YATHARTH\\Desktop\\gitfolder\\training_skyttus\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vishakha Patel\\source\\repos\\training_skyttus\\WebApi\\WebApi.csproj": {
+    "C:\\Users\\YATHARTH\\Desktop\\gitfolder\\training_skyttus\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vishakha Patel\\source\\repos\\training_skyttus\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\YATHARTH\\Desktop\\gitfolder\\training_skyttus\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "C:\\Users\\Vishakha Patel\\source\\repos\\training_skyttus\\WebApi\\WebApi.csproj",
-        "packagesPath": "C:\\Users\\Vishakha Patel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vishakha Patel\\source\\repos\\training_skyttus\\WebApi\\obj\\",
+        "projectPath": "C:\\Users\\YATHARTH\\Desktop\\gitfolder\\training_skyttus\\WebApi\\WebApi.csproj",
+        "packagesPath": "C:\\Users\\YATHARTH\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\YATHARTH\\Desktop\\gitfolder\\training_skyttus\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Vishakha Patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\YATHARTH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +40,26 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
