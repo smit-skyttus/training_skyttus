@@ -1,4 +1,5 @@
-﻿using WebApi.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using WebApi.Models;
 
 namespace WebApi.Repositories
 {
@@ -10,29 +11,35 @@ namespace WebApi.Repositories
         {
             _contect = context;
         }
-        public Task<Employee1> Create(Employee1 employee)
+        public async Task<Employee1> Create(Employee1 employee)
         {
-            throw new NotImplementedException();
+           _contect.Employees.Add(employee);
+            await _contect.SaveChangesAsync();
+            return employee;
         }
 
-        public Task Delete(int EmpID)
+        public async Task Delete(int EmpID)
         {
-            throw new NotImplementedException();
+            var employeeToDelete = await _contect.Employees.FindAsync(EmpID);
+            _contect.Employees.Remove(employeeToDelete);
+            await _contect.SaveChangesAsync();
         }
 
-        public Task<IEnumerable<Employee1>> Get()
+        public async Task<IEnumerable<Employee1>> Get()
         {
-            throw new NotImplementedException();
+            return await _contect.Employees.ToListAsync();
+
         }
 
-        public Task<Employee1> Get(int EmpID)
+        public async Task<Employee1> Get(int EmpID)
         {
-            throw new NotImplementedException();
+            return await _contect.Employees.FindAsync(EmpID);
         }
 
-        public Task Update(Employee1 employee)
+        public async Task Update(Employee1 employee)
         {
-            throw new NotImplementedException();
+            _contect.Entry(employee).State = EntityState.Modified;
+            await _contect.SaveChangesAsync();
         }
     }
 }

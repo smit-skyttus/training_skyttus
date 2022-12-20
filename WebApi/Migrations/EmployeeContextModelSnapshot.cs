@@ -21,7 +21,7 @@ namespace WebApi.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("WebApi.Models.Employee", b =>
+            modelBuilder.Entity("WebApi.Models.Employee1", b =>
                 {
                     b.Property<int>("EmpID")
                         .ValueGeneratedOnAdd()

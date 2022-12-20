@@ -8,6 +8,6 @@ namespace WebApi.Models
         {
             Database.EnsureCreated();
         }
-        public DbSet<Employee1> Employees { get; set; }
+        public DbSet<Employee1> Employees{ get; set; }
     }
 }
